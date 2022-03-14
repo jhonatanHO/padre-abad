@@ -1,0 +1,122 @@
+@import 'base/index';
+@import 'sass/index';
+@import 'components/index';
+
+.container-footer {
+    background: $primary-yellow;
+    width: 100%;
+    .content-footer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px 0 100px 0;
+        .grupo-footer {
+            padding: 0 0 25px 0;
+            @include respondto(minxs) {
+                width: 50%;
+            }
+            @include respondto(maxxs) {
+                width: 50%;
+            }
+            @include respondto(sm) {
+                width: 50%;
+            }
+            @include respondto(md) {
+                width: 25%;
+            }
+            @include respondto(lg) {
+                width: 25%;
+            }
+            .titulo-footer {
+                text-transform: capitalize;
+                font-family: $font-Cool-Reg;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 1.1;
+                color: $white;
+                padding: 0 0 14px 0;
+            }
+            .text-contacto {
+                font-family: $font-Cool-Reg;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 2.25;
+                color: $white;
+                padding: 0 12px 12px 0;
+            }
+            .lista-footer {
+                display: flex;
+                flex-direction: column;
+                .direccion-contacto {
+                    p{
+                        font-family: $font-Cool-Reg;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 1.1;
+                        color: $white;
+                        padding: 0 10px 16px 30px;
+                    }
+                }
+                .correo-contacto {
+                    padding: 0 10px 16px 30px;
+                    .mail-contacto{
+                        font-family: $font-Cool-Reg;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 1.1;
+                        color: $white;
+                        transition: all 0.15s linear 0s;
+                        &:hover{
+                            color: rgba($white,.8);
+                        }
+                    }
+                }
+                .numero-contacto {
+                    padding: 0 10px 16px 30px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .num-contacto{
+                        font-family: $font-Cool-Reg;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 1.1;
+                        color: $white;
+                        transition: all 0.15s linear 0s;
+                        &:hover{
+                            color: rgba($white,.8);
+                        }
+                    }
+                    span{
+                        font-family: $font-Cool-Reg;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 1.1;
+                        color: $white;
+                        padding: 0 5px 0 5px;
+                    }
+                }
+                .item-enlace {
+                    height: 36px;
+                    width: 100%;
+                    a{
+                        display:flex;
+                        align-items: center;
+                        text-transform: capitalize;
+                        font-family: $font-Cool-Reg;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 1.1;
+                        color: $white;
+                        padding: 0 12px 0 12px;
+                        height: 100%;
+                        width: 100%;
+                        transition: all 0.15s linear 0s;
+                        &:hover{
+                            background-color: rgba(#ccc, .25);
+                            color: rgba($white,.8);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

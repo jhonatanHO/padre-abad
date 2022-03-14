@@ -1,0 +1,178 @@
+@import 'base/index';
+@import 'sass/index';
+@import 'components/index';
+
+.historia-container{ 
+    background: #ffffff;
+    width: 100%;
+    .content-historia{
+        padding: 90px 0 70px 0;
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-content: stretch;
+        flex-wrap: wrap;
+        @include respondto(minxs) {
+            padding: 55px 0 55px 0;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            // flex-wrap: wrap;
+        }
+        @include respondto(maxxs) {
+            padding: 60px 0 60px 0;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        @include respondto(sm) {}
+        @include respondto(md) {}
+        @include respondto(lg) {}
+        .descripcion-historia{
+            width:65%;
+            padding-right: 150px;
+            @include respondto(minxs) {
+                width: 100%;
+                padding: 0 20px;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: flex-start;
+                align-items: center;
+            }
+            @include respondto(maxxs) {
+                width: 100%;
+                padding: 0 50px;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+            }
+            @include respondto(sm) {
+                width: 100%;
+                padding: 0 60px;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+            }
+            @include respondto(md) {}
+            @include respondto(lg) {}
+            h3{
+                font-size: 22px;
+                font-family: $font-Cool-Reg;
+                font-weight: 400;
+                line-height: 1.4;
+                margin-bottom: 35px;
+                letter-spacing: 1px;
+                color:#191919;
+                @include respondto(minxs) {
+                    font-size: 18px;
+                    margin-bottom: 17px;
+                }
+                @include respondto(maxxs) {
+                    font-size: 21px;
+                    margin-bottom: 20px;
+                    letter-spacing: 0.5px;
+                }
+                @include respondto(sm) {
+                    margin-bottom: 25px;
+
+                }
+                @include respondto(md) {}
+                @include respondto(lg) {}
+            }
+            p{
+                font-size: 16px;
+                font-family: $font-Roboto;
+                font-weight: 700;
+                line-height: 1.5;
+                margin-bottom: 35px;
+                letter-spacing: 0.5px;
+                color:#191919;
+                @include respondto(minxs) {
+                    font-size: 14px;
+                    line-height: 1.4;
+                    margin-bottom: 17px;
+                    font-weight: 400;
+                }
+                @include respondto(maxxs) {
+                    margin-bottom: 17px;
+                }
+                @include respondto(sm) {
+                    margin-bottom: 22px;
+                }
+                @include respondto(md) {}
+                @include respondto(lg) {}
+            }
+        }
+        .imagen-historia{
+            width: 35%;
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            @include respondto(minxs) {
+                padding:5px 0 5px 0;
+            }
+            @include respondto(maxxs) {
+                padding:20px 0 10px 0;
+            }
+            @include respondto(sm) {
+                padding:20px 0 10px 0;
+            }
+            @include respondto(md) {}
+            @include respondto(lg) {}
+            .text-historia{
+                display:flex;
+                flex-direction: column;
+                align-items: flex-start;
+                img{
+                    margin-bottom: 20px;
+                    @include respondto(minxs) {
+                        max-width: 80vw;
+                        padding:5px 0 5px 0;
+                    }
+                }
+                span{
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                    font-size: 20px;
+                    font-family: $font-Cool-Reg;
+                    font-weight: 400;
+                    line-height: 1.4;
+                    letter-spacing: 0.5px;
+                    color:#191919;  
+                    @include respondto(minxs) {
+                        margin-bottom: 5px;
+                        font-size: 17px;
+                        line-height: 1;
+                    }
+                    @include respondto(maxxs) {}
+                    @include respondto(sm) {}
+                    @include respondto(md) {}
+                    @include respondto(lg) {}                  
+                }
+                p{
+                    font-size: 17px;
+                    font-family: $font-Cool-Reg;
+                    font-weight: 400;
+                    line-height: 1.4;
+                    letter-spacing: 0.5px;
+                    color:#191919;
+                    font-style: italic;
+                    @include respondto(minxs) {
+                        font-size: 16px;
+                        line-height: 1;
+                    }
+                }
+            }
+        }
+    }
+}

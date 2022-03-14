@@ -1,0 +1,91 @@
+@import 'base/index';
+@import 'sass/index';
+@import 'components/index';
+
+.servicios-abad{
+    width: 100%;
+    background: white;
+    .container-servicios{
+        padding: 80px 0 80px 0;
+        .informacion-servicios{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 60px;
+            h3{
+                font-family: $font-Cool-Reg;
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 1.1;
+                color: $primary-text;
+                text-transform: uppercase;
+                margin-bottom: 10px;
+            }
+            p{
+                font-family: $font-Cool-Reg;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 1.1;
+                color: $primary-text;
+                margin-bottom: 10px;
+            }
+        }
+        .lista-servicios{  
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;   
+            .item-servicio{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0 0 25px 0;
+                @include respondto(minxs) {
+                    width: 50%;
+                }
+                @include respondto(maxxs) {
+                    width: 50%;
+                }
+                @include respondto(sm) {
+                    width: 50%;
+                }
+                @include respondto(md) {
+                    // width: 25%;
+                }
+                @include respondto(lg) {
+                    // width: 25%;
+                }      
+                .icono-item{
+                    width: 100px;
+                    margin-bottom: 20px;
+                    img{
+                        width: 100%;
+                    } 
+                }
+                .title-item{
+                    h4{
+                        font-family: $font-Cool-Reg;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 1.1;
+                        color: $primary-text;
+                        margin-bottom: 15px;
+                        letter-spacing: 1px;
+                    }
+                }
+                .parrafo-item{
+                    font-family: $font-Cool-Reg;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 1.1;
+                    color: $primary-text;
+                }
+            }
+        }     
+    }
+}

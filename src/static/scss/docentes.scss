@@ -1,0 +1,355 @@
+@import 'base/index';
+@import 'sass/index';
+@import 'components/index';
+
+.docentes-abad{
+    background: #ce9017;
+    .container-docentes{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 100px 0 0 0;
+        @include respondto(minxs) {
+            padding: 30px 0 0 0;
+        }
+        @include respondto(maxxs) {
+            padding: 40px 0 0 0;
+        }
+        @include respondto(sm) {
+            padding: 60px 0 0 0;
+        }
+        @include respondto(md) {
+            padding: 80px 0 0 0;
+        }
+        @include respondto(lg) {
+            padding: 100px 0 0 0;
+        }
+        .title-docentes{
+            padding: 0 0 30px 0;
+            @include respondto(minxs) {
+                width: 100%;
+            }
+            @include respondto(maxxs) {
+                width: 100%;
+            }
+            @include respondto(sm) {
+                padding: 30px 0 30px 0;
+                width: 100%;
+            }
+            @include respondto(md) {
+                padding: 30px 0 30px 0;
+                width: ((100%)*5/12);
+            }
+            @include respondto(lg) {
+                padding: 30px 0 30px 0;
+                width: ((100%)*5/12);
+            }
+            h2{
+                font-family: $font-Cool-Reg;
+                font-weight: 400;
+                font-size: 35px;
+                line-height: 1.1;
+                color: white;
+                text-transform: uppercase;
+                margin-bottom: 30px;
+                padding: 10px 10px 0 0;
+            }
+            p{
+                font-family: $font-Cool-Reg;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 1.2;
+                color: white;
+                margin-bottom: 15px;
+                padding: 0 15px 0 0;
+                @include respondto(minxs) {}
+                @include respondto(maxxs) {}
+                @include respondto(sm) {
+                    padding: 0 30px 0 0;
+                }
+                @include respondto(md) {
+                    padding: 0 80px 0 0;
+                }
+                @include respondto(lg) {
+                    padding: 0 100px 0 0;
+                }
+            }
+        }
+        .content-docentes{
+            // display: flex;
+            @include respondto(minxs) {
+                width: 100%;
+            }
+            @include respondto(maxxs) {
+                width: 100%;
+            }
+            @include respondto(sm) {
+                width: 100%;
+            }
+            @include respondto(md) {
+                width: ((100%)*7/12);
+            }
+            @include respondto(lg) {
+                width: ((100%)*7/12);
+            }
+            .caja-docentes{
+                display: flex;
+                .slider-central{
+                    display: flex;
+                    align-items: center;
+                    max-width: 460px;
+                    width: calc(100% - 135px);
+                    height: auto;
+                    margin-bottom: 15px;
+                    // position: relative;
+                    // z-index: 2;
+                    .slick-list{
+                        .slick-track{
+                            .item-central{
+                                position: relative;
+                                border-radius: 100%;
+                                overflow: hidden;
+                                &:after{
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    bottom: 0;
+                                    right: 0;
+                                    border-radius: 100%;
+                                    border: 5px solid #fff;
+                                    outline-color: transparent;
+                                }
+                                .conten-imagen{
+                                    img{
+                                        height: auto;
+                                        width: 100%;
+                                    }
+                                }
+                                .docente-info{
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 0;
+                                    width: 100%;
+                                    text-align: center;
+                                    padding: 30px;
+                                    background: rgba(0,0,0,0.7);
+                                    @include respondto(minxs) {}
+                                    @include respondto(maxxs) {
+                                        padding: 32px 50px 60px;
+                                    }
+                                    @include respondto(sm) {}
+                                    @include respondto(md) {
+                                        padding: 32px 50px 60px;
+                                    }
+                                    @include respondto(lg) {
+                                        padding: 32px 50px 60px;
+                                    }
+                                    h3{
+                                        font-family: $font-josefin;
+                                        font-size: 18px;
+                                        color: #fff;
+                                        @include respondto(minxs) {}
+                                        @include respondto(maxxs) {}
+                                        @include respondto(sm) {
+                                            margin: 0 0 10px 0;
+                                        }
+                                        @include respondto(md) {
+                                            margin: 0 0 10px 0;
+                                        }
+                                        @include respondto(lg) {
+                                            margin: 0 0 10px 0;
+                                        }
+                                    }
+                                    p{
+                                        font-family: $font-Roboto;
+                                        font-size: 14px;
+                                        color: #fff;
+                                        @include respondto(minxs) {}
+                                        @include respondto(maxxs) {}
+                                        @include respondto(sm) {
+                                            margin: 0 0 10px 0;
+                                        }
+                                        @include respondto(md) {
+                                            margin: 0 0 10px 0;
+                                        }
+                                        @include respondto(lg) {
+                                            margin: 0 0 10px 0;
+                                        }
+                                    }
+                                    strong{
+                                        font-family: $font-Roboto;
+                                        font-size: 14px;
+                                        color: #fff;
+                                        @include respondto(minxs) {}
+                                        @include respondto(maxxs) {}
+                                        @include respondto(sm) {}
+                                        @include respondto(md) {}
+                                        @include respondto(lg) {}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .slider-vertical{
+                    position: relative;
+                    max-width: 210px;
+                    margin-left: -75px;
+                    overflow: hidden;
+                    margin-bottom: 10px;
+                    &:before{
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        left: -450px;
+                        height: 600px;
+                        width: 600px;
+                        border: 1px solid #fff;
+                        transform: translateY(-50%);
+                        border-radius: 100%;
+                    }
+                    .slick-list{
+                        .slick-track{
+                            padding: 5px 0 0 5px;
+                            .item-imagen{
+                                outline-color: transparent;
+                                &.slick-slide{
+                                    &:not(.slick-active){
+                                        .content-imagen{
+                                            margin: 0 0 0 5px;
+                                            @include respondto(minxs) {}
+                                            @include respondto(maxxs) {
+                                                margin: 7px 0 7px 5px;
+                                            }
+                                            @include respondto(sm) {}
+                                            @include respondto(md) {
+                                                margin: 7px 0 7px 5px;
+                                            }
+                                            @include respondto(lg) {
+                                                margin: 7px 0 7px 5px;
+                                            }
+                                        }
+                                    }
+                                    &.slick-active,
+                                    &.slick-adyacentes{
+                                        .content-imagen{
+                                            background: #fff;
+                                            overflow: hidden;
+                                            opacity: 1;
+                                            margin: 0 0 0 75px;
+                                            @include respondto(minxs) {}
+                                            @include respondto(maxxs) {
+                                                margin: 7px 0 7px 75px;
+                                            }
+                                            @include respondto(sm) {}
+                                            @include respondto(md) {
+                                                margin: 7px 0 7px 75px;
+                                            }
+                                            @include respondto(lg) {
+                                                margin: 7px 0 7px 75px;
+                                            }
+                                            cursor: pointer;
+                                            &:hover{
+                                                img{
+                                                    opacity: 1;
+                                                }
+                                            }
+                                            &:after{
+                                                content: '';
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                bottom: 0;
+                                                right: 0;
+                                                border-radius: 100%;
+                                                background: rgba(255, 255, 255, 0);
+                                                border: 1px solid rgba(255, 255, 255, 0);
+                                                outline-color: transparent;
+                                            }
+                                            img{
+                                                opacity: .5;
+                                            }
+                                        }
+                                    }
+                                    .content-imagen{
+                                        margin: 0 0 0 75px;
+                                        @include respondto(minxs) {}
+                                        @include respondto(maxxs) {
+                                            margin: 7px 0 7px 75px;
+                                        }
+                                        @include respondto(sm) {}
+                                        @include respondto(md) {
+                                            margin: 7px 0 7px 75px;
+                                        }
+                                        @include respondto(lg) {
+                                            margin: 7px 0 7px 75px;
+                                        }
+                                    }
+                                    &.slick-center,
+                                    &.slick-select{
+                                        .content-imagen{
+                                            opacity: 1;
+                                            margin: 0 0 0 103px;
+                                            @include respondto(minxs) {}
+                                            @include respondto(maxxs) {
+                                                margin: 7px 0 7px 103px;
+                                            }
+                                            @include respondto(sm) {}
+                                            @include respondto(md) {
+                                                margin: 7px 0 7px 103px;
+                                            }
+                                            @include respondto(lg) {
+                                                margin: 7px 0 7px 103px;
+                                            }
+                                            cursor: pointer;
+                                            img{
+                                                opacity: 1;
+                                            }
+                                            &:after{
+                                                content: '';
+                                                position: absolute;
+                                                top: 0;
+                                                left: 0;
+                                                bottom: 0;
+                                                right: 0;
+                                                border-radius: 100%;
+                                                border: 3px solid #fff;
+                                                outline-color: transparent;
+                                            }
+                                        }
+                                    }
+                                }
+                                .content-imagen{
+                                    position: relative;
+                                    overflow: hidden;
+                                    transition: all 0.3s ease-out 0s;
+                                    background: #fff;
+                                    border-radius: 100%;
+                                    width: 100px;
+                                    height: 100px;
+                                    opacity: 0;
+                                    margin: 0 0 0 5px;
+                                    @include respondto(minxs) {}
+                                    @include respondto(maxxs) {
+                                        margin: 7px 0 7px 5px;
+                                    }
+                                    @include respondto(sm) {}
+                                    @include respondto(md) {
+                                        margin: 7px 0 7px 5px;
+                                    }
+                                    @include respondto(lg) {
+                                        margin: 7px 0 7px 5px;
+                                    }
+                                    img{
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

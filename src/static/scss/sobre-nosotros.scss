@@ -1,0 +1,331 @@
+@import 'base/index';
+@import 'sass/index';
+@import 'components/index';
+
+.sobre-nosotros{
+    width: 100%;
+    background: white;
+    .content-nosotros{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 90px 0 75px 0;
+        @include respondto(minxs) {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px 0 45px 0;            
+        }
+        @include respondto(maxxs) {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 50px 0 45px 0;
+        }
+        @include respondto(sm) {
+            display:flex;
+            flex-direction: column;           
+            align-items: flex-start;            
+            padding: 55px 0 45px 20px;
+        }
+        @include respondto(md) {
+            // justify-content: flex-start;
+        }
+        @include respondto(lg) {}
+        .imagen-nosotros{
+            max-width: 41.666667%;
+            padding-right: 29px;
+            margin-bottom: 25px;
+            @include respondto(minxs) {
+                max-width: 100%;
+                height: 100%;
+                padding: 5px;
+                margin-bottom: 15px;
+            }
+            @include respondto(maxxs) {
+                max-width: 100%;
+                height: 100%;
+                padding: 5px;
+                margin-bottom: 15px;
+            }
+            @include respondto(sm) {
+                max-width: 100%;
+                height: 100%;
+                padding: 5px;
+                margin-bottom: 15px;
+            }
+            @include respondto(md) {
+                max-width: 35%;
+            }
+            @include respondto(lg) {}
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        .info-nosotros{
+            width: 58.333333%;
+            padding-left: 25px;
+            margin-bottom: 25px;
+            @include respondto(minxs) {
+                padding: 0 15px;
+                width: 100%;
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+            @include respondto(maxxs) {
+                display:flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: center;
+                align-items: center;
+                flex-wrap: wrap;
+                width: 100%;
+                padding: 0 25px;
+                // margin-bottom: 25px;
+            }
+            @include respondto(sm) {
+                width: 100%;
+                padding:0;
+                // margin-bottom:
+                
+            }
+            @include respondto(md) {
+                max-width: 65%;
+            }
+            @include respondto(lg) {}
+            .title-nosotros{
+                
+                h4{
+                    color:#222a35;
+                    font-family: $font-Roboto;
+                    font-weight: 300;
+                    font-size: 21px;
+                    letter-spacing: 0;
+                    line-height: 1;
+                    margin-bottom: 12px;
+                    @include respondto(minxs) {
+                        font-size: 19px;
+                    }
+                    @include respondto(maxxs) {
+                        margin-bottom: 10px;
+                    }
+                    @include respondto(sm) {
+                        margin-bottom: 7px;
+                    }
+                    @include respondto(md) {}
+                    @include respondto(lg) {}
+                }
+                h3{
+                    font-family: $font-Cool-Reg;                  
+                    font-weight: 700;
+                    font-size: 57px;
+                    color:#222a35;
+                    letter-spacing: 5px;
+                    line-height: 1;
+                    @include respondto(minxs) {
+                        font-size: 31px;
+                        letter-spacing: 3px;
+                    }
+                    @include respondto(maxxs) {
+                        font-size: 56px;
+                    }
+                    @include respondto(sm) {
+
+                    }
+                    @include respondto(md) {}
+                    @include respondto(lg) {}
+                }
+            }
+            .parrafo-nosotros{
+                margin-top:34px;
+                margin-bottom: 40px;
+                @include respondto(minxs) {                                  
+                    margin-top: 20px;  
+                    margin-bottom: 20px;                 
+                }
+                @include respondto(maxxs) {                                 
+                    margin-top: 15px; 
+                    margin-bottom: 20px; 
+                }
+                @include respondto(sm) {
+                    margin-top: 15px; 
+                    margin-bottom: 20px;
+                }
+                @include respondto(md) {
+                    margin-bottom: 30px;
+                }
+                @include respondto(lg) {}
+                p{
+                    color:#222a35;
+                    font-family: $font-Roboto;
+                    font-size: 17px;
+                    font-weight: 300;
+                    line-height: 1.4;
+                    padding-right: 150px;
+                    @include respondto(minxs) {
+                        padding: 0;
+                        
+                    }
+                    @include respondto(maxxs) {
+                        padding: 0;
+                    }
+                    @include respondto(sm) {
+                        padding-right: 200px;
+                    }
+                    @include respondto(md) {
+                        padding:0;
+                    }
+                    @include respondto(lg) {}
+                }
+            }
+            .subtitle-nosotros{
+                width: 100%;
+                display:flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 30px;
+                @include respondto(minxs) {
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom: 10px;
+                }
+                @include respondto(maxxs) {
+                    display:flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+                @include respondto(sm) {
+                    margin-bottom: 10px;
+                }
+                @include respondto(md) {
+                    margin-bottom: 35px;
+                }
+                @include respondto(lg) {}
+                .subtitulo-nosotros{
+                    width: 50%;
+                    padding:0 25px ;
+                    
+                    @include respondto(minxs) {
+                        width: 100%;
+                        padding:0;                        
+                    }
+                    @include respondto(maxxs) {
+                        width: 100%;
+                        padding:0;
+                    }
+                    @include respondto(sm) {
+                        // width: 100%;
+                        padding: 0 18px 0 15px;
+
+                    }
+                    @include respondto(md) {
+                        padding:0;
+                        // padding: 0 0 0 10px;
+
+                    }
+                    @include respondto(lg) {}
+                    &:nth-child(1){
+                        padding-left: 0;
+                    }
+                    h4{
+                        color: #222a35;
+                        margin-bottom: 23px;
+                        font-weight: 900;
+                        font-size: 21px;
+                        letter-spacing: 1px;
+                        line-height: 1;                        
+                        font-family: $font-Roboto;
+                        @include respondto(minxs) {
+                            margin-bottom: 10px;                          
+                            font-size: 20px;
+                            letter-spacing: 0;
+                            line-height: 1; 
+                        }
+                        @include respondto(maxxs) {
+                            margin-bottom: 10px;  
+                            letter-spacing: 0.5px;
+                        }
+                        @include respondto(sm) {
+                            margin-bottom: 20px; 
+                            // font-size: 21px;
+                        }
+                        @include respondto(md) {
+
+                        }
+                        @include respondto(lg) {}
+                    }
+                    p{
+                        color: #768292;
+                        margin-bottom: 23px;
+                        font-weight: 300;
+                        font-size: 17px;
+                        line-height: 1.4;
+                        // font-family: $font-Cool-Reg;
+                        // font-family: $font-josefin;
+                        font-family: $font-Roboto;
+                    }
+                }
+            }
+            .button{
+                display:flex;                
+                justify-content: center;
+                text-align: center;
+                align-items: center;                
+                background: #5caf01;
+                cursor: pointer;
+                border-radius: 5px;
+                width: 200px;
+                height: 47px;                
+                &:focus,
+                &:active{
+                    box-shadow: 0 0 3px 0 rgba(100, 100, 100, 0.75);
+                }
+                transition: all 0.15s linear 0s;
+                &:hover{
+                    border:2px solid  #5caf01;
+                    background: transparent;
+                    a{
+                        color:#5caf01;
+                    }
+                }
+                @include respondto(minxs) {
+                    width: 163px;
+                }
+                @include respondto(maxxs) {
+                    width: 163px;
+                }
+                @include respondto(sm) {
+                    width: 163px;
+                }
+                @include respondto(md) {
+
+                }
+                @include respondto(lg) {}
+                a{
+                    text-decoration: none;
+                    color:#ffffff;
+                    font-size: 19px;
+                    font-family: $font-Roboto;
+                    font-weight: 400;
+                    transition: all 0.15s linear 0s;
+                }
+            }
+        }
+    }
+}

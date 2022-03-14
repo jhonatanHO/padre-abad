@@ -1,0 +1,28 @@
+@import 'base/index';
+@import 'sass/index';
+@import 'components/index';
+
+.bloque-imagen{
+    width: 100%;
+    overflow: hidden;
+    img{
+        width: 100%;
+        @include respondto(minxs) {
+            transform: translateX(-35vh);
+            width: 170vw;
+            height: auto;
+        }
+        @include respondto(maxxs) {
+            transform: translateX(-20vh);
+            width: 140vw;
+            height: auto;
+        }
+        @include respondto(sm) {
+            transform: translateX(-10vh);
+            width: 120vw;
+            height: auto;
+        }
+        @include respondto(md) {}
+        @include respondto(lg) {}
+    }
+}
